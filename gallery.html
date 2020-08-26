@@ -20,13 +20,10 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/macy@2.5.1/dist/macy.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 
@@ -53,54 +50,40 @@
     </div>
   </header>
   <!-- Header -->
-
   <div class="content">
-    <div class="container-fluid">
-      <div class="pictures">
-        <div class="responsive">
-          <div class="gallery">
-            <a href="img/official/3.jpg" target="_self"><img src="img/official/3.jpg"></a>
-            <div class="des">Opis Zdjecia</div>
-          </div>
-        </div>
-
-        <div class="responsive">
-          <div class="gallery">
-            <a href="img/official/13.jpg" target="_self"><img src="img/official/13.jpg"></a>
-            <div class="des">Opis Zdjecia</div>
-          </div>
-        </div>
-
-        <div class="responsive">
-          <div class="gallery">
-            <a href="img/official/9.jpg" target="_self"><img src="img/official/9.jpg"></a>
-            <div class="des">Opis Zdjecia</div>
-          </div>
-        </div>
-
-        <div class="responsive">
-          <div class="gallery">
-            <a href="img/official/11.jpg" target="_self"><img src="img/official/11.jpg"></a>
-            <div class="des">Opis Zdjecia</div>
-          </div>
-        </div>
-
-        <div class="responsive">
-          <div class="gallery">
-            <a href="img/official/14.jpg" target="_self"><img src="img/official/14.jpg"></a>
-            <div class="des">Opis Zdjecia</div>
-          </div>
-        </div>
-
-        <div class="responsive">
-          <div class="gallery">
-            <a href="img/official/1.jpg" target="_self"><img src="img/official/1.jpg"></a>
-            <div class="des">Opis Zdjecia</div>
-          </div>
-        </div>
-      </div>
+    <div class="gallery">
+      <img class="item" src="img/official/13.jpg">
+      <img class="item" src="img/official/2.jpg">
+      <img class="item" src="img/official/3.jpg">
+      <img class="item" src="img/official/4.jpg">
+      <img class="item" src="img/official/5.jpg">
+      <img class="item" src="img/official/6.jpg">
+      <img class="item" src="img/official/7.jpg">
+      <img class="item" src="img/official/8.jpg">
+      <img class="item" src="img/official/9.jpg">
+      <img class="item" src="img/official/10.jpg">
+      <img class="item" src="img/official/11.jpg">
+      <img class="item" src="img/official/12.jpg">
+      <img class="item" src="img/official/1.jpg">
     </div>
   </div>
+
+  <script>
+    const msnry = new Macy({
+      container: '.gallery',
+      mobileFirst: true,
+      columns: 1,
+      breakAt: {
+        400: 1,
+        700: 2,
+        1100: 3,
+      },
+      margin: {
+        x: 20,
+        y: 20,
+      }
+    })
+  </script>
 
   <!-- Footer -->
   <footer class="page-footer font-small white">
