@@ -2,7 +2,7 @@ body{
   font: 15px/1.5 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #f4f4f4
+  background-color: #e6e6e6
 }
 
 body, html{
@@ -18,46 +18,9 @@ article{
 }
 
 .content{
-  min-height: 100%;
-  width: 100%;
-  margin-bottom: 70px;
+  min-height: 90%;
+  margin-bottom: 20px;
 }
-
-.row{
-  width: 100%;
-}
-
-/* NOTE: Offer Body*/
-
-.tableleft img{
-  max-width: 100%;
-  height: auto;
-  width: auto/9;
-  float: right;
-}
-
-.tableright img{
-  margin-left: 10%;
-  max-width: 100%;
-  height: auto;
-  width: auto/9;
-  float: left;
-}
-
-.tableright img, .tableleft img{
-  margin: 7% auto;
-}
-
-
-.tableleft, .tableright{
-  margin-top: 90px;
-  border-style: groove;
-  width: 85%;
-  margin: 0 auto;
-  margin-top: 6%;
-}
-/* Offer body */
-
 
 
 /* NOTE: slider */
@@ -67,10 +30,6 @@ article{
   padding: 70px;
 }
 
-
-.slick-slide {
-    margin: 0px 0px;
-}
 
 .customer-logos slider slick-initialized slick-slider{
   height: 40px;
@@ -211,100 +170,43 @@ article{
 }
 
 
+/* Galeria */
 .item {
   width: 80%;
 }
 
 /* Galeria */
 
-/* .des{
-  padding: 15px;
-  text-align: center;
-  margin-bottom: 10%;
-}
+/* Contact */
 
-.responsive{
-margin-bottom: 40px;
-margin: 10px 0;
-padding: 0 6px;
-float: left;
-}
+  .details {
+  position: relative;
+  }
 
-.responsive img{
-  width: 300px;
-}
-
-.pictures{
-  margin-top: 70px;
-  position: absolute;
-} */
-
-
-
-@media only screen and (max-width : 700px) {
-
-    .responsive{
-      width: 100%;
-      margin: 5px; 
-    }
-
-    .responsive img {
-      width: 90%;
-    }
-
-}
-
-@media only screen and (max-width : 500px) {
-
-    .responsive{
-      width: 100%;
-    }
-    .pictures{
-      padding-left: 20px;
-    }
-
-    
-}
-
-/* Galeria */
-
-
-/* contact */
-.contactform{
-  margin-top: 60px;
-
-}
-
-.contactform img{
-  width:45%;
-  height: auto;
-  margin-left: 40px;
-}
-
-span{
-  font-size: 20px;
+  .details .title {
+  font-size: 25px;
   color: #468FC8;
-  margin-right: 20px;
-  font-weight: bold;
-}
+  text-transform: uppercase;
+  }
 
-.contact-details tr td {
-    padding:5px;
-    margin-top: 10px;
-}
+  .details {
+    font-size: 20px;
+  }
+
+  .details li:last-child {
+  border-bottom: none; 
+  }
+
+  .details .opening-hours li.today {
+  color: #468FC8; 
+  }
 
 iframe{
   width: 100%;
   height: 400px;;
   min-width: 80%;
-  margin-left: 40px;
 }
 
-#range img{
-padding-top: 70px;
-width: 70%;
-height: auto;
-}
 
 /* contact */
 
@@ -316,19 +218,8 @@ height: auto;
             visibility: visible;
       }
 
-.pictures{
-  min-height: 100%;
-  padding-left: 100px;
-}
-}
 
-@media screen and (max-width: 1070){
-
-  .responsive img{
-    width: 1px;
-  }
 }
-
 
 
 footer img{
