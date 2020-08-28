@@ -193,6 +193,10 @@ article{
     font-size: 20px;
   }
 
+  .row figure{
+    height: 30em;
+  }
+
   .details li:last-child {
   border-bottom: none; 
   }
