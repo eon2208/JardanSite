@@ -22,10 +22,6 @@ article{
   margin-bottom: 20px;
 }
 
-figure{
-   min-height: inherit;
-}
-
 
 /* NOTE: slider */
 
@@ -196,8 +192,7 @@ figure{
   .details {
     font-size: 20px;
   }
-
-
+ 
 
   .details li:last-child {
   border-bottom: none; 
@@ -224,6 +219,13 @@ iframe{
             visibility: visible;
       }
 
+}
+
+@media screen and (max-width: 340px){
+
+  figcaption p{
+   font-size: 13px;
+  }
 }
 
 footer img{
