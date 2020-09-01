@@ -1,3 +1,4 @@
+/* Global */
 body{
   font: 15px/1.5 'Poppins', sans-serif;
   padding: 0;
@@ -10,31 +11,78 @@ body, html{
   margin: 0;
 }
 
-article{
-  font-size: 18px;
-  color: #393939;
-  width: 100%;
-  margin: 15px;
-}
-
 .content{
   min-height: 90%;
   margin-bottom: 20px;
 }
+/* !Global */
 
+/* Index */
+
+.parallax{
+  background-image: url(../img/official/official.jpg);
+  margin-top: 2em;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  height: 150%;
+  background-attachment: fixed;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border: 3px solid #f1f1f1;
+  position: static;
+  transform: translate(12%,-143%);
+  z-index: 1;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.bg-text h1{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.about{
+  width: 70%;
+  margin: auto;
+  margin-top: 3em;
+  left: 50%;
+}
+
+.about .card-title{ 
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+}
 
 /* NOTE: slider */
 
-.container h2{
+.companies h2{
   text-align:center;
+  font-weight: bold;
   padding: 70px;
 }
 
+.companies{
+  width: 90%;
+  margin: auto;
+  padding-left: 2em;
+}
 
 .customer-logos slider slick-initialized slick-slider{
   height: 40px;
   margin-bottom: 70px;
-  margin-left: 50%;
+
 }
 
 .slick-slide img {
@@ -164,18 +212,22 @@ article{
     display: none;
 }
 
-.gallery {
+/* Slider */
+
+/* !Index */
+
+/* Gallery */
+
+ .gallery {
   width: 90%;
   margin: 50px auto;
 }
 
-
-/* Galeria */
 .item {
   width: 80%;
 }
 
-/* Galeria */
+/* !Gallery */
 
 /* Contact */
 
@@ -206,7 +258,13 @@ iframe{
   width: 100%;
   height: 400px;;
   min-width: 80%;
+  border: 0px;
 }
+
+.range img{
+  width: 70%;;
+}
+
 
 
 /* contact */
@@ -221,11 +279,33 @@ iframe{
 
 }
 
+@media screen and (max-width:580px){
+
+  .parallax{
+    height: 130%;
+  }
+
+  .bg-text{
+    transform: translate(12%,-125%);
+  }
+
+  .about{
+    margin-top: 2em;
+    width: 100%;
+  }
+  
+  .range img{
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 340px){
 
-  figcaption p{
+  figcaption p {
    font-size: 13px;
   }
+
+ 
 }
 
 footer img{
@@ -240,5 +320,5 @@ footer img{
 
 .footer-copyright{
   color: #ffffff;
-    background-color: #468FC8;
+  background-color: #468FC8;
 }
