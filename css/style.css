@@ -22,25 +22,22 @@ body, html{
 .parallax{
   background-image: url(../img/official/official.jpg);
   margin-top: 2em;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
   height: 150%;
   background-attachment: fixed;
-  background-position: 50% 10%;
+  background-position: 60% 15%;
   background-repeat: no-repeat;
   background-size: cover;
-
+  border: 3px solid grey;
 }
 
 .bg-text {
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0, 0.4); 
   color: white;
-  font-weight: bold;
   font-size: 17px;
   border: 3px solid #f1f1f1;
   position: static;
-  transform: translate(12%,-143%);
+  transform: translate(12%,-146%);
   z-index: 1;
   width: 80%;
   padding: 20px;
@@ -76,11 +73,13 @@ body, html{
 .companies{
   width: 90%;
   margin: auto;
-  padding-left: 2em;
+}
+
+.companies .slide{
+  margin-left: 2em;
 }
 
 .customer-logos slider slick-initialized slick-slider{
-  height: 40px;
   margin-bottom: 70px;
 
 }
@@ -227,6 +226,10 @@ body, html{
   width: 80%;
 }
 
+figcaption h2{
+  text-align: center;
+}
+
 /* !Gallery */
 
 /* Contact */
@@ -297,6 +300,10 @@ iframe{
   .range img{
     width: 100%;
   }
+
+  .details{
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 340px){
@@ -305,6 +312,17 @@ iframe{
    font-size: 13px;
   }
 
+  figcaption h2{
+    font-size: 17px;
+  }
+
+  .about{
+    font-size: 13px;
+  }
+
+  .companies h2 {
+    font-size: 20px;
+  }
  
 }
 
