@@ -215,6 +215,16 @@ body, html{
 
 /* !Index */
 
+/* Offer */
+
+figcaption h2{
+  text-align: center;
+}
+
+
+
+/* !Offer */
+
 /* Gallery */
 
  .gallery {
@@ -226,9 +236,7 @@ body, html{
   width: 80%;
 }
 
-figcaption h2{
-  text-align: center;
-}
+
 
 /* !Gallery */
 
@@ -295,6 +303,7 @@ iframe{
   .about{
     margin-top: 2em;
     width: 100%;
+    font-size: 15px;
   }
   
   .range img{
@@ -314,10 +323,6 @@ iframe{
 
   figcaption h2{
     font-size: 17px;
-  }
-
-  .about{
-    font-size: 13px;
   }
 
   .companies h2 {
